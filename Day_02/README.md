@@ -29,7 +29,7 @@ $$ f(x) = sigmoid(x) =  \dfrac{1}{1+e^{-x}} $$
 <p align="center">
 <img src="https://user-images.githubusercontent.com/70928356/218247145-e7d2119e-086d-4738-8c87-aa14ec2c0692.png">
 </p>
-
+ 
 ### - **SoftMax function:**
 - It is used for logistic regression and basic neural network implementation
 - Used for **MULTI-CLASS classification** problems and CNNs
