@@ -34,3 +34,5 @@ $$ f(x) = sigmoid(x) =  \dfrac{1}{1+e^{-x}} $$
 
 ## Additional resources used 
 - [Sigmoid vs Softmax activation function](https://medium.com/arteos-ai/the-differences-between-sigmoid-and-softmax-activation-function-12adee8cf322)
+- [Why should we Normalize image pixel values or divide by 255? | Medium](https://medium.com/analytics-vidhya/a-tip-a-day-python-tip-8-why-should-we-normalize-image-pixel-values-or-divide-by-255-4608ac5cd26a#:~:text=The%20pixel%20values%20can%20range,range%20from%200%20to%201.)
+- [How to Manually Scale Image Pixel Data for Deep Learning | ML Mastery](https://machinelearningmastery.com/how-to-manually-scale-image-pixel-data-for-deep-learning/#:~:text=Normalize%20Pixel%20Values,-For%20most%20image&text=Neural%20networks%20process%20inputs%20using,value%20between%200%20and%201.)
