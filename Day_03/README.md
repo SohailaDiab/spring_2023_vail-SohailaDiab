@@ -8,10 +8,19 @@
 * Computing accuracy
 
 ## Main takeaways from doing today's assignment
-<To be filled>
+- Activation functions are a crucial part of a neural network that help model non-linearity of input data. These activation functions are represented by the neurons defined in each layer of the network.
+- Properties of activation functions:
+  - Non-linear
+  - Injective: $f(x1) = f(x2)  ->  x1=x3$
+  - Differentiable and continuous
+    - Useful for updating the model weights after each training pass to make the model more accurate using an approach called "backpropogation based on gradient descent"
+- $y=2x$ is NOT an activation function since it is linear
+- $y=sin(x)$ is not a good activation function since 2 inputs can give the same output. They're also "spiky", so differentiating it in order to adjust the weights of the nodes is challenging. 
+- It is preferable for activation functions to be smooth.
 
 ## Challenging, interesting, or exciting aspects of today's assignment
 <To be filled>
 
 ## Additional resources used 
-<To be filled>
+- [Weight Initialization for Deep Learning Neural Networks | ML Mastery](https://machinelearningmastery.com/weight-initialization-for-deep-learning-neural-networks/#:~:text=Weight%20initialization%20is%20used%20to,the%20models%20on%20a%20dataset.)
+- [How to initialize deep neural networks? Xavier and Kaiming initialization](https://pouannes.github.io/blog/initialization/)
