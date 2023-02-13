@@ -23,6 +23,8 @@
 These simple and somewhat geometric filters are what we'd see at the start of our network.<br>
 The deeper the network, the more sophisticated the filters become. So in later layers, rather than edges and simple shapes, the filters may detect things like, eyes, hands, leaves, etc. In even deeper layers, filters may detect things like a person, cats, dogs, trees, etc.
 
+
+
 ## Challenging, interesting, or exciting aspects of today's assignment
 <To be filled>
 
