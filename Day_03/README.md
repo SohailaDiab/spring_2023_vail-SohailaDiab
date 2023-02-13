@@ -33,3 +33,4 @@
 - [Step-by-step back propagation](https://hmkcode.com/ai/backpropagation-step-by-step/)
 - [Back propagation visualization](http://experiments.mostafa.io/public/ffbpann/)
 - [Difference Between Backpropagation and Stochastic Gradient Descent](https://machinelearningmastery.com/difference-between-backpropagation-and-stochastic-gradient-descent/)
+- [Stochastic Gradient Descent vs. Gradient Descent](https://medium.com/bayshore-intelligence-solutions/why-is-stochastic-gradient-descent-2c17baf016de#:~:text=The%20main%20difference%20is%2C%20of,data%20point%20for%20each%20update.)
