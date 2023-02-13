@@ -22,7 +22,7 @@
 - Very deep neural networks using sigmoid activation functions could not easily be trained, due to a problem called the "vanishing gradient problem". The **Rectified Linear (RELU)** activation function overcomes this problem, allowing models to learn faster and perform better.
 
 ## Challenging, interesting, or exciting aspects of today's assignment
-<To be filled>
+- Understanding the math behind backpropagation
 
 ## Additional resources used 
 - [Weight Initialization for Deep Learning Neural Networks | ML Mastery](https://machinelearningmastery.com/weight-initialization-for-deep-learning-neural-networks/#:~:text=Weight%20initialization%20is%20used%20to,the%20models%20on%20a%20dataset.)
@@ -30,3 +30,5 @@
 - [Interpreting logits: Sigmoid vs Softmax - Note: GREAT Explanation!!](https://web.stanford.edu/~nanbhas/blog/sigmoid-softmax/)
 - [Why use softmax only in the output layer and not in hidden layers?](https://stackoverflow.com/questions/37588632/why-use-softmax-only-in-the-output-layer-and-not-in-hidden-layers)
 - [Introduction to the Rectified Linear Unit (ReLU) and Limitations of Sigmoid and Tanh Activation Functions](https://machinelearningmastery.com/rectified-linear-activation-function-for-deep-learning-neural-networks/)
+- [Step-by-step back propagation](https://hmkcode.com/ai/backpropagation-step-by-step/)
+- [Back propagation visualization](http://experiments.mostafa.io/public/ffbpann/)
