@@ -32,3 +32,4 @@
 - [Introduction to the Rectified Linear Unit (ReLU) and Limitations of Sigmoid and Tanh Activation Functions](https://machinelearningmastery.com/rectified-linear-activation-function-for-deep-learning-neural-networks/)
 - [Step-by-step back propagation](https://hmkcode.com/ai/backpropagation-step-by-step/)
 - [Back propagation visualization](http://experiments.mostafa.io/public/ffbpann/)
+- (Difference Between Backpropagation and Stochastic Gradient Descent)[https://machinelearningmastery.com/difference-between-backpropagation-and-stochastic-gradient-descent/]
