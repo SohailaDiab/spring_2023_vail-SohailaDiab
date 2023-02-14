@@ -54,7 +54,27 @@ The deeper the network, the more sophisticated the filters become. So in later l
 - Parameter sharing
 - Equivariant representation
 
-(more info in 2nd link of additional resources)
+(more info in 1st link of additional resources)
+
+### Activation Layer
+*Note: Activation layer and activation function are the same thing and used interchangeably.*
+
+- Once the feature maps are extracted, we then pass them through an activation function.
+- The activation function is usually a Rectified Linear Unit (ReLU) layer.
+  - ReLU is a non-linear function
+  - No parameters or weights are given to learn from images
+  - It sets all the negative pixel value to 0 and introduces non-linearity to the network
+  - The resulted output is now a `rectified feature map`
+  - Activation functions are used in NNs to learn more complex features
+![image](https://user-images.githubusercontent.com/70928356/218702968-a2010572-8dcc-4899-92fb-38c23cf139fc.png)
+
+### Pooling Layer
+- The resulting feature map from the output layer then goes through the pooling layer.
+- This is used to shrink the image (down-sampling operation) and reduces the dimensionality of the feature map.
+- This is useful because it decreases the required amount of computational complexity and weights.
+- It also helps to identify information from the image like edges, corners, and curves.
+![image](https://user-images.githubusercontent.com/70928356/218714942-49572214-04ff-4c00-83f1-ae4662ce7796.png)
+
 
 ## Challenging, interesting, or exciting aspects of today's assignment
 - How the CNNs are able to detect patterns by applying filters to an image.
