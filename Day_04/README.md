@@ -66,6 +66,7 @@ The deeper the network, the more sophisticated the filters become. So in later l
   - It sets all the negative pixel value to 0 and introduces non-linearity to the network
   - The resulted output is now a `rectified feature map`
   - Activation functions are used in NNs to learn more complex features
+  
 ![image](https://user-images.githubusercontent.com/70928356/218702968-a2010572-8dcc-4899-92fb-38c23cf139fc.png)
 
 ### Pooling Layer
@@ -75,6 +76,15 @@ The deeper the network, the more sophisticated the filters become. So in later l
 - It also helps to identify information from the image like edges, corners, and curves.
 ![image](https://user-images.githubusercontent.com/70928356/218714942-49572214-04ff-4c00-83f1-ae4662ce7796.png)
 
+### Fully-Connected Layer
+![image](https://user-images.githubusercontent.com/70928356/218715590-b1c12222-6095-4358-bc12-bdab8023c142.png)
+
+- We then flatten the feature map matrix and input them to a fully-connected layer.
+- This is the usual fully-connected feed forward neural network.
+- The fully-connected layer then sums the features from all the combination of the features of the previous layer and gets it ready for classification.
+- This helps to map the representation between the input and the output.
+
+![image](https://user-images.githubusercontent.com/70928356/218718763-c6e736b9-9384-4421-8fb6-1fa984737ce4.png)
 
 ## Challenging, interesting, or exciting aspects of today's assignment
 - How the CNNs are able to detect patterns by applying filters to an image.
