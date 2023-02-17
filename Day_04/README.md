@@ -86,6 +86,26 @@ The deeper the network, the more sophisticated the filters become. So in later l
 
 ![image](https://user-images.githubusercontent.com/70928356/218718763-c6e736b9-9384-4421-8fb6-1fa984737ce4.png)
 
+### Overfitting
+- Happens when the model memorizes the data instead of learning it
+- This could be due to the number of training samples not being sufficient enough for the model to learn properly
+- We detect overfitting by seeing if the training error is much lower than the testing error
+
+**Techniques for mitigating overfitting:**
+#### 1. Pooling layer with padding
+- Pooling layer reduces the spatial dimensions of the input. This can help migitate overfitting since it reduces the number of features, and overfitting occurs when the dataset size is not enough to learn the features
+- Padding might be required to process inputs with a shape that does not perfectly fit kernel size and stride of the pooling layer. Also padding might be used for inputs which fit kernels to ensure the kernels equally cover the edge features of the input as well.
+
+#### 2. Dropout
+- Dropout is a regularization method that approximates training a large number of neural networks with different architectures in parallel.
+- Dropout momentarily (in a batch of input data) switches off some neurons in a layer so that they do not contribute any information or learn any information during those updates, and the onus falls on other active neurons to learn harder and reduce the error.
+- This has the effect of making the training process noisy, forcing nodes within a layer to probabilistically take on more or less responsibility for the inputs.
+
+![download](https://user-images.githubusercontent.com/70928356/219655592-f06b5976-625a-424c-a2e5-f6bc21286bf3.gif)
+
+#### 3. Batch Normalization
+- We normalize the outputs of the activation function of a certain layer to avoid having its weights much larger than the other layers and to avoid exploding gradients
+
 ## Challenging, interesting, or exciting aspects of today's assignment
 - How the CNNs are able to detect patterns by applying filters to an image.
 - I took a Signal Processing course, where I studied convolution and understood that it finds the overlap of 2 signals. I did not understand why we needed it or where it is applied. It was very interesting to see how it actually works and that is it very important.
@@ -93,3 +113,6 @@ The deeper the network, the more sophisticated the filters become. So in later l
 ## Additional resources used 
 - [Convolutional Neural Networks, Explained](https://towardsdatascience.com/convolutional-neural-networks-explained-9cc5188c4939)
 - [CS231 Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io/convolutional-networks/#conv)
+- [Dropout for regularizing deep neural networks](https://machinelearningmastery.com/dropout-for-regularizing-deep-neural-networks/)
+- [Batch normalization for training of deep neural networks](https://machinelearningmastery.com/batch-normalization-for-training-of-deep-neural-networks/)
+- [Batch Normalization (“batch norm”) explained | DeepLizard YouTube video](https://www.youtube.com/watch?v=dXB-KQYkzNU)
