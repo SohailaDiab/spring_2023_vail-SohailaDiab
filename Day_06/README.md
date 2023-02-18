@@ -7,6 +7,10 @@
 * Sparse Categorical Cross-Entropy
 
 ## Main takeaways from doing today's assignment
+- There are three kinds of classification tasks:
+  - Binary classification: two exclusive classes
+  - Multi-class classification: more than two exclusive classes
+  - Multi-label classification: just non-exclusive classes
 - Loss functions are a measure of how well the model is performing on a specific dataset
 - The loss functions that are used for classification include:
   - Binary Cross-Entropy - *used for a binary classification problem*
@@ -39,6 +43,7 @@ $$CCE = -\frac{1}{N}\sum_{i=1}^{N}y_i\log(\hat{y}_i)$$
 
 
 
+
 ## Challenging, interesting, or exciting aspects of today's assignment
 - The distributions of labels contribute to the calculation of the loss function was something I did not quite expect
 
@@ -46,3 +51,4 @@ $$CCE = -\frac{1}{N}\sum_{i=1}^{N}y_i\log(\hat{y}_i)$$
 - [A Gentle Introduction to Cross-Entropy for Machine Learning](https://machinelearningmastery.com/cross-entropy-for-machine-learning/)
 - [How to Calculate the KL Divergence for Machine Learning](https://machinelearningmastery.com/divergence-between-probability-distributions/#:~:text=KL%20divergence%20can%20be%20calculated,of%20the%20event%20in%20P.&text=The%20value%20within%20the%20sum%20is%20the%20divergence%20for%20a%20given%20event.)
 - [What loss function for multi-class, multi-label classification tasks in neural networks?](https://stats.stackexchange.com/questions/207794/what-loss-function-for-multi-class-multi-label-classification-tasks-in-neural-n)
+- [Should I use a categorical cross-entropy or binary cross-entropy loss for binary predictions?](https://stats.stackexchange.com/questions/260505/should-i-use-a-categorical-cross-entropy-or-binary-cross-entropy-loss-for-binary)
