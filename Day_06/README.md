@@ -39,13 +39,23 @@ $$BCE = -\frac{1}{N} \sum_{i=1}^N y_i \cdot \log(p(y_i)) + (1-y_i) \cdot \log(1-
 
 ### Categorical Cross Entropy
 $$CCE = -\frac{1}{N}\sum_{i=1}^{N}y_i\log(\hat{y}_i)$$ 
+- It is used when true labels are **one-hot encoded**.<br>
+*For example, we have the following true values for 3-class classification problem: dog, cat, bird = [1,0,0], [0,1,0], [0,0,1]*
+- Cross-entropy loss increases as the **predicted probability** strays away from the **actual label**
+- It heavily penalizes the predictions that are confident (probability closer to 1), but wrong.
+- Used for **multi-class**, **single-label** classification
 
-
-
+### Sparse Categorical Cross Entropy
+$$SCCE = -\log(\hat{y}_i)$$ for $i$ where $one\text{-}hot\text{-}encoding[i] = 1$ 
+- A sparse variant of the Multi-Class Cross Entropy Loss. It has the same loss function as Categorical Cross Entropy
+- It is used when true labels are **integer encoded** (label encoded)<br>
+*For example, we have the following true values for 3-class classification problem: dog, cat, bird = [1], [2], [3], respectively*
+- It does not need the true labels to be one-hot encoded
+- This is typically used when we have a lot of classes, since one-hot encoding cause a much higher dimensionality than label encoding. Therefore, it save more time and computation than the usualy one-hot encoded CCE
 
 
 ## Challenging, interesting, or exciting aspects of today's assignment
-- The distributions of labels contribute to the calculation of the loss function was something I did not quite expect
+- The distributions of labels contributing to the calculation of the loss function was something I did not quite expect
 
 ## Additional resources used 
 - [A Gentle Introduction to Cross-Entropy for Machine Learning](https://machinelearningmastery.com/cross-entropy-for-machine-learning/)
