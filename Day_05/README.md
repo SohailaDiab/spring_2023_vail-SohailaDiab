@@ -37,6 +37,8 @@ $$MSLE = \frac{\sum_{i=1}^{n}(\log(y_i+1) - \log(\hat{y}_i+1))^2}{n}$$
 - MSLE only cares about the relative difference between the true and the predicted value, or in other words, it only cares about the percentual difference between them
 - This means that MSLE will treat small differences between small true and predicted values approximately the same as big differences between large true and predicted values
 - MSLE can be used when we don't want large errors to be significantly more penalized than small ones, in those cases where the range of the target value is large
+- Useful when dealing with right skewed targets (long tail distribution), since taking the log transform makes the target more normally distributed
+- The range is 0 to ∞
 
 ## Challenging, interesting, or exciting aspects of today's assignment
 - It is interesting to see the vast amount of loss functions that can be used, each used depending on how our data looks like
