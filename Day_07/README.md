@@ -39,9 +39,22 @@ $$\begin{equation}
 - 👍 The updates of parameters are very smooth, and we move smoothly towards the optimum solution. This is because we are averaging over all the gradients for a single step 
 - 👎 However, it is slow and takes a lot of time to make a single update. Therefore, it is not ideal for large training datasets
 - 👎 BGD is not compatible with online learning, where we get new examples during training
+- 👎 Uses a lot of compute time and memory
+
+### Stochastic Gradient Descent (SGD)
+![image](https://user-images.githubusercontent.com/70928356/221186064-17def835-f643-4fbf-ba14-c501922bc2ec.png)
+
+- With SDG, only **one** training sample is used to calculate an estimate of the gradient and update the parameters per epoch
+- 👎 Because only one example is considered at a time, the updates in parameters are very noisy and the loss will fluctuate. Therefore, finding the minimum (local or global) is NOT guaranteed
+- 👍 It performs well in practice and allows for online learning
+- 👍 Having noisy estimates can act as a form of regularization and prevent overfitting
+- 👍 We need much less memory than BGD, since only one training example is used at a time
+
 
 ## Challenging, interesting, or exciting aspects of today's assignment
 <To be filled>
 
 ## Additional resources used 
 - [Batch, Mini Batch & Stochastic Gradient Descent | Towards Data Science](https://towardsdatascience.com/batch-mini-batch-stochastic-gradient-descent-7a62ecba642a)
+- [Variants of Gradient Descent Algorithm
+ | Analytics Vidhya](https://www.analyticsvidhya.com/blog/2021/03/variants-of-gradient-descent-algorithm/)
