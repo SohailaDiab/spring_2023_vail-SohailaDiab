@@ -48,8 +48,17 @@ $$\begin{equation}
 - 👎 Because only one example is considered at a time, the updates in parameters are very noisy and the loss will fluctuate. Therefore, finding the minimum (local or global) is NOT guaranteed
 - 👍 It performs well in practice and allows for online learning
 - 👍 Having noisy estimates can act as a form of regularization and prevent overfitting
-- 👍 We need much less memory than BGD, since only one training example is used at a time
+- 👍 We need much less memory and compute power than BGD, since only one training example is used at a time
 
+### Mini Batch Stochastic Gradient Descent (MB-SGD)
+![image](https://user-images.githubusercontent.com/70928356/221195645-056d50ce-39ef-4b96-b453-3d80ef82de32.png)
+
+- It is a compromise between batch and stochastic gradient descent
+- Here, we use a subset (mini-batch) of the training examples to calculate an estimate of the gradient and update the weights. The number of examples (batch size) that will be used is fixed.
+- We still have *some* noise in the gradient estimate and depending on the batch size the updates can be made less noisy (greater batch -> less noise)
+- It has the advantages of both between batch and stochastic gradient descent
+
+*In deep learning, we almost always use mini-batch gradient descent. However, it is often referred to simply as SGD*
 
 ## Challenging, interesting, or exciting aspects of today's assignment
 <To be filled>
@@ -58,3 +67,9 @@ $$\begin{equation}
 - [Batch, Mini Batch & Stochastic Gradient Descent | Towards Data Science](https://towardsdatascience.com/batch-mini-batch-stochastic-gradient-descent-7a62ecba642a)
 - [Variants of Gradient Descent Algorithm
  | Analytics Vidhya](https://www.analyticsvidhya.com/blog/2021/03/variants-of-gradient-descent-algorithm/)
+- [Is Gradient Descent central to every optimizer? | Stack Exchange](https://datascience.stackexchange.com/questions/47142/is-gradient-descent-central-to-every-optimizer)
+- [Does batch size matter?
+ | Jane Street Tech Blog](https://blog.janestreet.com/does-batch-size-matter/)
+ - [A DISCIPLINED APPROACH TO NEURAL NETWORK
+HYPER-PARAMETERS: PART 1 – LEARNING RATE,
+BATCH SIZE, MOMENTUM, AND WEIGHT DECAY | Research paper by Leslie N. Smith](https://arxiv.org/pdf/1803.09820.pdf)
