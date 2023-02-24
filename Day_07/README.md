@@ -58,7 +58,16 @@ $$\begin{equation}
 - We still have *some* noise in the gradient estimate and depending on the batch size the updates can be made less noisy (greater batch -> less noise)
 - It has the advantages of both between batch and stochastic gradient descent
 
-*In deep learning, we almost always use mini-batch gradient descent. However, it is often referred to simply as SGD*
+***In deep learning, we almost always use mini-batch gradient descent. However, it is often referred to simply as SGD***
+
+### Which Optimization algorithm should we use?
+This depends on the model and dataset, and there are no specific rules for it.
+
+These are some guidelines:
+- **Adam** typically works very well in a large number of settings and is usually a good choice
+- **RMSProp** can often outperform Adam for RNNs as well as in RL. If you are working in either of these domains, then it might be worth trying **RMSProp**
+- **SGD** and **SGD with momentum** often work just as well as more sophisticated methods like Adam even though they are simple
+
 
 ## Challenging, interesting, or exciting aspects of today's assignment
 <To be filled>
