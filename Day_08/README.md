@@ -40,9 +40,15 @@
   - MultiLabel Classification
     - One node per class (n nodes), `Sigmoid activation`    
     
+### Relation between activation function with loss function
+![image](https://user-images.githubusercontent.com/70928356/221403360-6b2d8335-48e2-47f2-8895-2778cd77abc8.png)
 
 ## Challenging, interesting, or exciting aspects of today's assignment
-<To be filled>
+The advanced Activation Functions such as:
+  - Swish (Sigmoid-Weighted Linear Units)
+  - GeLU (Gaussian Error Linear Unit)
+  - SeLU (Scaled ELU)
+Were a great read.
 
 ## Additional resources used 
 - [Everything you need to know about “Activation Functions” in Deep learning models | Towards Data Science](https://towardsdatascience.com/everything-you-need-to-know-about-activation-functions-in-deep-learning-models-84ba9f82c253)
