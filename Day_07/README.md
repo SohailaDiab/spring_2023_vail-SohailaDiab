@@ -68,9 +68,40 @@ These are some guidelines:
 - **RMSProp** can often outperform Adam for RNNs as well as in RL. If you are working in either of these domains, then it might be worth trying **RMSProp**
 - **SGD** and **SGD with momentum** often work just as well as more sophisticated methods like Adam even though they are simple
 
+### Learning Rate
+- Also refered to as **step size**
+- A configurable hyperparameter that controls how much to change the model in response to the estimated error each time the model weights are updated.
+- It has a small positive value, usually ranging from 0.0 to 1.0
+![image](https://user-images.githubusercontent.com/70928356/221395688-af3f660e-ab78-42b0-9f97-2c6ca6c8b739.png)
+
+- If the learning rate is too small, then the optimization will be slow. The model is likely to get stuck into a local minimum or plateau
+- If the learning rate is too high, then the updates will be very large. This can cause the optimization to diverge
+- The learning rate influences the optimizer's convergence, therefore we should pick an appropriate value
+![image](https://user-images.githubusercontent.com/70928356/221395699-ef99972f-8ca6-4a7e-9bfa-f6be3336a86f.png)
+
+
+### Gradient Descent with Momentum
+- Momentum helps to accelerate the GD and mive faster towards convergence
+- An issue wil vanilla (pure) GD is that the progression of the search can bounce around the search space based on the gradient. While moving downhill, there can be spikes which cause noisy gradients. This can slow down the progress of the search
+- Using Momentum is one of the ways to approach this problem. It takes into consideration the history (past gradients)
+- It is a configurable hyperparameter `Y` ranging from 0.0 to 1.0. The higher the value, the more past values are taken into consideration. It's usually set to 0.9
+![image](https://user-images.githubusercontent.com/70928356/221396164-1f0b62e7-aa2d-4e8a-9586-2025bfb55119.png)
+
+
+### Adaptive Optimization
+- In adaptive optimization, the parameters, such as the learning rate and momentum, **will not stay constant**
+- Instead, these values will constantly adapt for each and every weight in the network and hence will also change along with the weights
+- Some adaptive algorithms:
+  - AdaGrad (Adaptive Gradient)
+  - AdaDelta
+  - RMSprop
+  - Adam
+- Adam optimizer is the most popular GD optimization algorithm
+- Adam is computationally efficient and has very little memory requirement
+- Adam implements the exponential moving average of the gradients to scale the learning rate. It keeps exponentially decaying averages of past gradients
 
 ## Challenging, interesting, or exciting aspects of today's assignment
-<To be filled>
+- It was interesting to learn about the many different algorithms we can use to optimize the model
 
 ## Additional resources used 
 - [Batch, Mini Batch & Stochastic Gradient Descent | Towards Data Science](https://towardsdatascience.com/batch-mini-batch-stochastic-gradient-descent-7a62ecba642a)
@@ -82,3 +113,6 @@ These are some guidelines:
  - [A DISCIPLINED APPROACH TO NEURAL NETWORK
 HYPER-PARAMETERS: PART 1 – LEARNING RATE,
 BATCH SIZE, MOMENTUM, AND WEIGHT DECAY | Research paper by Leslie N. Smith](https://arxiv.org/pdf/1803.09820.pdf)
+- [Gradient Descent With Momentum from Scratch
+ | Machine Learning Mastery](https://machinelearningmastery.com/gradient-descent-with-momentum-from-scratch/)
+ - [Understanding Adaptive Optimization techniques in Deep learning | Analytics India Mag](https://analyticsindiamag.com/understanding-adaptive-optimization-techniques-in-deep-learning/)
