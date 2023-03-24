@@ -10,7 +10,7 @@
 <To be filled>
 
 ## Challenging, interesting, or exciting aspects of today's assignment
-<To be filled>
+- Working with text data and learning how to preprocess it
 
 ## Additional resources used 
-<To be filled>
+- [Underfitting and Overfitting in Deep Learning | Medium](https://medium.com/mlearning-ai/underfitting-and-overfitting-in-deep-learning-687b1b7eb738)
