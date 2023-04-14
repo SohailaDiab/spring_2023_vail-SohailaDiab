@@ -58,9 +58,16 @@ $$cost = (\mathbf{y} - \mathbf{x}W)^2 + λ||W||_2^2$$
 | Trade-off | Bias-variance trade-off | Bias-variance trade-off |
 | Used for | Feature selection, reducing model complexity | Reducing model complexity, weight initialization |
 
+### Dropout
+- Dropout is a regularization technique for reducing overfitting in neural networks.
+- It prevents the neurons from co-adapting to each other, forcing them to learn more independent features.
+- It randomly drops out (sets to zero) a fraction of the neurons in a layer during training.
+- Implemented by applying a binary mask to the output of a layer in which each element is set to 0 with probability `p` and scaled up by `1/(1-p)` to maintain the mean of the output.
+- The optimal dropout rate depends on the specific dataset and model architecture, and can be tuned using a validation set.
+- Dropout can slow down the training of a neural network because it requires more iterations to converge, but this can be mitigated by using techniques such as batch normalization or weight decay.
 
 ## Challenging, interesting, or exciting aspects of today's assignment
-<To be filled>
+- Using multiple regularization methods at the same time may not yield good results. Could even yield worse results.
 
 ## Additional resources used 
 - [L1 and L2 Regularization Methods | Towards Data Science](https://towardsdatascience.com/l1-and-l2-regularization-methods-ce25e7fc831c)
