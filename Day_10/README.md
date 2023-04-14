@@ -66,6 +66,16 @@ $$cost = (\mathbf{y} - \mathbf{x}W)^2 + λ||W||_2^2$$
 - The optimal dropout rate depends on the specific dataset and model architecture, and can be tuned using a validation set.
 - Dropout can slow down the training of a neural network because it requires more iterations to converge, but this can be mitigated by using techniques such as batch normalization or weight decay.
 
+### Overfitting and Underfitting
+
+|           | Overfitting                              | Underfitting                            |
+| --------- | ---------------------------------------- | --------------------------------------- |
+| Methods   | - Dropout, - L1/L2 regularization, - Data augmentation, - Early stopping, - Batch Normalization | - Increase model capacity (number of parameters or complexity), - Collect more data, - Feature engineering, - Increasing the training time until cost function is minimised |
+| Causes    | Large model capacity, Insufficient data  | Small model capacity, Poor features     |
+| Effects   | Poor generalization, High variance       | Poor training performance, High bias    |
+| Indicators | Low training error, High validation error | High training error, High validation error |
+
+
 ## Challenging, interesting, or exciting aspects of today's assignment
 - Using multiple regularization methods at the same time may not yield good results. Could even yield worse results.
 
